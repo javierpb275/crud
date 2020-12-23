@@ -5,7 +5,7 @@ class Modelo {
 	static public function rutasModelo($rutas) {
 
 		if($rutas == "ingreso" || $rutas == "registrar" || $rutas == "empleados" || $rutas == "salir") {
-			$pagina = "Vistas/modulos".$rutas.".php";
+			$pagina = "Vistas/modulos/".$rutas.".php";
 		}
 
 		else if($rutas == "index") {
@@ -18,7 +18,7 @@ class Modelo {
 
 		return $pagina;
 	}
-	
+
 }
 
 ?>
