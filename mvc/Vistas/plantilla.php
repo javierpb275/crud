@@ -10,6 +10,12 @@
 
 <body>
 
+	<?php
+
+	include "modulos/menu.php";
+
+	?>
+
 
 
 <section>
