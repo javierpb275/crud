@@ -15,7 +15,7 @@ class AdminC {
 
 				session_start():
 
-				$_SESSION["Ingreso"] == true;
+				$_SESSION["Ingreso"] = true;
 
 				header("location:index.php?ruta=empleados");
 			}
