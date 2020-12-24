@@ -10,11 +10,4 @@ class ConexionBD {
 	}
 }
 
-/*
-host: localhost
-nombre bd: crud
-usuario: root
-contraseña:
-*/
-
 ?>
