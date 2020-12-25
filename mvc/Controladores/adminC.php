@@ -13,7 +13,7 @@ class AdminC {
 
 			if ($respuesta["usuario"] == $_POST["usuarioI"] && $respuesta["clave"] == $_POST["claveI"]) {
 
-				session_start():
+				session_start();
 
 				$_SESSION["Ingreso"] = true;
 
