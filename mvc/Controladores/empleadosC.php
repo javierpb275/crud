@@ -2,6 +2,7 @@
 
 class EmpleadosC {
 
+	//Registrar los empleados
 	public function RegistrarEmpleadosC() {
 
 		if(isset($_POST["nombreR"])) {
@@ -25,6 +26,15 @@ class EmpleadosC {
 
 
 		}
+	}
+
+	//Mostrar empleados
+	public function MostrarEmpleadosC() {
+
+		$tablaBD = "empleados";
+
+		$respuesta = EmpleadosM::MostrarEmpleadosM($tablaBD);
+
 	}
 }
 
