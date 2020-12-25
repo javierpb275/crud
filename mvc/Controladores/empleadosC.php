@@ -14,7 +14,16 @@ class EmpleadosC {
 
 			$respuesta = EmpleadosM::RegistrarEmpleadosM($datosC, $tablaBD);
 
-			
+			if($respuesta == "Bien") {
+
+				header("location:index.php?ruta=empleados");
+
+			} else {
+
+				echo "error";
+			}
+
+
 		}
 	}
 }
