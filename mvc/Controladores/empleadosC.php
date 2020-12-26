@@ -53,6 +53,34 @@ class EmpleadosC {
 		}
 
 	}
+
+	//Editar Empleado:
+	public function EditarEmpleadosC() {
+
+		$datosC = $_GET["id"];
+
+		$tablaBD = "empleados";
+
+		$respuesta = EmpleadosM::EditarEmpleadoM($datosC, $tablaBD);
+
+		echo '<input type="hidden" value="'.$respuesta["id"].'" name="idE">
+
+		<input type="text" placeholder="Nombre" value="'.$respuesta["nombre"].'" name="nombreE" required>
+
+		<input type="text" placeholder="Apellido" value="'.$respuesta["apellido"].'" name="apellidoE" required>
+
+		<input type="email" placeholder="Email" value="'.$respuesta["email"].'" name="emailE" required>
+
+		<input type="text" placeholder="Puesto" value="'.$respuesta["puesto"].'" name="puestoE" required>
+
+		<input type="text" placeholder="Salario" value="'.$respuesta["salario"].'" name="salarioE" required>
+
+		<input type="submit" value="Actualizar">';
+
+
+	}
+
+
 }
 
 ?>
