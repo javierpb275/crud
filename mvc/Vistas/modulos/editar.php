@@ -19,7 +19,10 @@
 		<?php
 
 		$editar = new EmpleadosC();
-		$editar -> EditarEmpleadosC();
+		$editar -> EditarEmpleadoC();
+
+		$actualizar = new EmpleadosC();
+		$actualizar -> ActualizarEmpleadoC();
 
 		?>
 
