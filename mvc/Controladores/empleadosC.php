@@ -44,7 +44,9 @@ class EmpleadosC {
 				<td>'.$value["email"].'</td>
 				<td>'.$value["puesto"].'</td>
 				<td>'.$value["salario"].'</td>
-				<td><button>Editar</button></td>
+
+				<td><a href="index.php?ruta=editar&id='.$value["id"].'"><button>Editar</button></a></td>
+
 				<td><button>Borrar</button></td>
 			</tr>';
 
